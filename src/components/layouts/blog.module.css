@@ -1,0 +1,9 @@
+.blog {
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .excerpt {
+    margin-top: 0.5rem;
+  }
+}
