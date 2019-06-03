@@ -20,7 +20,7 @@ const photos = [
     src: "/gallery/ben-cruachan.jpg",
     width: 1,
     height: 1,
-    caption: "Ben Crauchan - Climed with Daniel during November 2018."
+    caption: "Ben Crauchan - Climbed with Daniel during November 2018."
   },
   {
     src: "/gallery/london-marathon-2.jpg",
@@ -44,7 +44,7 @@ const photos = [
     src: "/gallery/kili.jpg",
     width: 1,
     height: 1,
-    caption: "I climed Mount Kilimanjaro with my mum in 2010."
+    caption: "I climbed Mount Kilimanjaro with my mum in 2010."
   },
 
   {
