@@ -28,7 +28,8 @@ export default ({ data }) => {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { glob: "**/src/posts/**" } }
+      filter: { fileAbsolutePath: { glob: "**/ src /
+  posts; /**" } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: "https://www.garyblackwood.co.uk",
     title: "Gary Blackwood",
     description: "The personal website of Gary Blackwood.",
     author: "Gary Blackwood",
@@ -107,6 +108,61 @@ module.exports = {
         color: "#4285f4",
         // Disable the loading spinner.
         showSpinner: false
+      }
+    },
+    // To generate an atom.xml for an RSS feed.
+    {
+      resolve: "gatsby-plugin-feed",
+      options: {
+        query: `
+            {
+              site {
+                siteMetadata {
+                  title
+                  description
+                  siteUrl
+                  site_url: siteUrl
+                }
+              }
+            }
+          `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  custom_elements: [{ "content:encoded": edge.node.html }]
+                });
+              });
+            },
+            query: `
+                {
+                  allMarkdownRemark(
+                    filter: { fileAbsolutePath: { glob: "**/src/posts/**" } }
+                    sort: { order: DESC, fields: [frontmatter___date] },
+                  ) {
+                    edges {
+                      node {
+                        excerpt
+                        html
+                        frontmatter {
+                          title
+                          date
+                          path
+                        }
+                      }
+                    }
+                  }
+                }
+              `,
+            output: "/rss.xml",
+            title: "Gary Blackwood"
+          }
+        ]
       }
     }
   ]

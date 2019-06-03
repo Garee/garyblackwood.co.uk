@@ -9,7 +9,7 @@ path: "/running"
 
 | Miles | Goal | Days Ran |
 | ----- | ---- | -------- |
-| 678   | 1500 | 121/162  |
+| 678   | 1500 | 121/163  |
 
 ### Races
 
@@ -21,6 +21,16 @@ path: "/running"
 
 ### Log
 
+#### Week 24
+
+| Miles | Goal | Days |
+| ----- | ---- | ---- |
+| 0     | 20   | 0/1  |
+
+| Date         | Miles | Type | Total | Notes |
+| ------------ | ----- | ---- | ----- | ----- |
+| Mon 3rd June | -     | Rest | 0     | -     |
+
 #### Week 23
 
 | Miles | Goal | Days |
@@ -31,8 +41,8 @@ path: "/running"
 | ------------ | ----- | -------- | ----- | --------------------------------------------------------------------- |
 | Sun 2nd Jun  | 3     | Easy     | 13    | My knee is improving. A little sore after the run.                    |
 | Sat 1st Jun  | 3     | Easy     | 10    | My knee felt pretty good today.                                       |
-| Fri 31st May | -     | Rest     | 7     |                                                                       |
-| Thu 30th May | -     | Rest     | 7     |                                                                       |
+| Fri 31st May | -     | Rest     | 7     | -                                                                     |
+| Thu 30th May | -     | Rest     | 7     | -                                                                     |
 | Wed 29th May | 3     | Recovery | 7     | Knee pain was worse today.                                            |
 | Tue 28th May | 4     | Recovery | 4     | Painful right knee. Still trying to recover from the London Marathon. |
-| Mon 27th May | -     | Rest     | 0     |                                                                       |
+| Mon 27th May | -     | Rest     | 0     | -                                                                     |

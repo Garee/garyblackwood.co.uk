@@ -1,9 +1,9 @@
 import React from "react";
 
-import HomeLayout from "../components/layouts/home";
+import AboutLayout from "../components/layouts/about";
 
 export default () => (
-  <HomeLayout>
+  <AboutLayout>
     <p>I'm a developer living in Glasgow, Scotland.</p>
     <p>
       You can find me on <a href="https://github.com/Garee">Github</a>,{" "}
@@ -36,5 +36,5 @@ export default () => (
       Want to chat? Feel free to{" "}
       <a href="mailto:gary@garyblackwood.co.uk">email</a> me.
     </p>
-  </HomeLayout>
+  </AboutLayout>
 );

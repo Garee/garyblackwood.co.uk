@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 
 import BaseLayout from "./base";
 
-import styles from "./home.module.css";
+import styles from "./about.module.css";
 
 export default ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,8 +20,8 @@ export default ({ children }) => {
   `);
 
   return (
-    <BaseLayout title="Home">
-      <section className={styles.home}>
+    <BaseLayout title="About">
+      <section className={styles.about}>
         <div className={styles.text}>
           <h1>
             Hello{" "}
