@@ -51,7 +51,7 @@
   "scripts": {
     "clean": "rm -rf .cache/ public",
     "build": "gatsby build",
-    "deploy": "scp public/* deploy@garyblackwood.co.uk:~/garyblackwood.co.uk",
+    "deploy": "scp -r public/* deploy@garyblackwood.co.uk:~/garyblackwood.co.uk",
     "develop": "gatsby develop",
     "format": "prettier --write *.js src/**/*.{js,css}",
     "lint:js": "eslint --fix *.js src/**/*.js",
