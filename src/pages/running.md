@@ -25,10 +25,16 @@ path: "/running"
 
 | Miles | Goal | Days |
 | ----- | ---- | ---- |
-| 0     | 20   | 0/1  |
+| 15    | 20   | 5/7  |
 
 | Date         | Miles | Type | Total | Notes |
 | ------------ | ----- | ---- | ----- | ----- |
+| Sun 9th June | 4     | Easy | 15    | -     |
+| Sat 8th June | 3     | Easy | 12    | -     |
+| Fri 7th June | 3     | Easy | 9     | -     |
+| Thu 6th June | 3     | Easy | 6     | -     |
+| Wed 5th June | 3     | Easy | 3     | -     |
+| Tue 4th June | -     | Rest | 0     | -     |
 | Mon 3rd June | -     | Rest | 0     | -     |
 
 #### Week 23
