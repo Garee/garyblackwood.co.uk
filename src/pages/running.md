@@ -7,9 +7,9 @@ path: "/running"
 
 ## 2019
 
-| Miles | Goal | Days Ran |
-| ----- | ---- | -------- |
-| 678   | 1500 | 121/163  |
+| Miles | Goal |
+| ----- | ---- |
+| 762   | 1500 |
 
 ### Races
 
@@ -20,6 +20,21 @@ path: "/running"
 - **Average pace:** 6:50 min/mile
 
 ### Log
+
+#### Week 25
+
+| Miles | Goal | Days |
+| ----- | ---- | ---- |
+| 30    | 40   | 5/6  |
+
+| Date          | Miles | Type | Total | Notes |
+| ------------- | ----- | ---- | ----- | ----- |
+| Sat 15th June | 6     | Easy | 30    | -     |
+| Fri 14th June | 6     | Easy | 24    | -     |
+| Thu 13th June | 6     | Easy | 18    | -     |
+| Wed 12th June | 6     | Easy | 12    | -     |
+| Tue 11th June | 6     | Easy | 6     | -     |
+| Mon 10th June | -     | Rest | 0     | -     |
 
 #### Week 24
 
