@@ -9,7 +9,7 @@ path: "/running"
 
 | Miles | Goal |
 | ----- | ---- |
-| 762   | 1500 |
+| 845   | 1500 |
 
 ### Races
 
