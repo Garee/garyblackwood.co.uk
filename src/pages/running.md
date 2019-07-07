@@ -13,6 +13,12 @@ path: "/running"
 
 ### Races
 
+#### [Victoria Parkrun 5K](https://www.strava.com/activities/2508246526) - 17:42
+
+- **Date:** 6th July 2019
+- **Distance:** 5 Kilometers
+- **Average pace:** 5:41 min/mile
+
 #### [London Marathon](https://www.strava.com/activities/2325642618) - 2:59:50
 
 - **Date:** 29th April 2019
@@ -21,19 +27,68 @@ path: "/running"
 
 ### Log
 
+#### Week 27
+
+| Miles | Goal | Days |
+| ----- | ---- | ---- |
+| 40    | 40   | 6/7  |
+
+| Date          | Miles | Type | Total | Notes                                        |
+| ------------- | ----- | ---- | ----- | -------------------------------------------- |
+| Sun 30th June | 6     | -    | 40    | -                                            |
+| Sat 29th June | 6     | -    | 34    | Race: Victoria Parkrun 5K - 17:42, 3rd Place |
+| Fri 28th June | 7     | Easy | 28    | -                                            |
+| Thu 27th June | 7     | Easy | 21    | -                                            |
+| Wed 26th June | 7     | Easy | 14    | -                                            |
+| Tue 25th June | 7     | Easy | 7     | -                                            |
+| Mon 24th June | -     | -    | -     | Played 5s                                    |
+
+#### Week 26
+
+| Miles | Goal | Days |
+| ----- | ---- | ---- |
+| 42    | 40   | 5/7  |
+
+| Date          | Miles | Type | Total | Notes |
+| ------------- | ----- | ---- | ----- | ----- |
+| Sun 30th June | -     | -    | 42    | -     |
+| Sat 29th June | 6     | -    | 42    | -     |
+| Fri 28th June | 13    | Easy | 42    | -     |
+| Thu 27th June | 10    | Easy | 29    | -     |
+| Wed 26th June | 7     | Easy | 19    | -     |
+| Tue 25th June | 6     | Easy | 12    | -     |
+| Mon 24th June | 6     | Easy | 6     | -     |
+
+#### Week 26
+
+| Miles | Goal | Days |
+| ----- | ---- | ---- |
+| 30    | 30   | 5/7  |
+
+| Date          | Miles | Type | Total | Notes |
+| ------------- | ----- | ---- | ----- | ----- |
+| Sun 23rd June | -     | -    | 30    | -     |
+| Sat 22nd June | 6     | Easy | 30    | -     |
+| Fri 21st June | 6     | Easy | 24    | -     |
+| Thu 20th June | 6     | Easy | 18    | -     |
+| Wed 19th June | 6     | Easy | 12    | -     |
+| Tue 18th June | 6     | Easy | 6     | -     |
+| Mon 17th June | -     | Rest | 0     | -     |
+
 #### Week 25
 
 | Miles | Goal | Days |
 | ----- | ---- | ---- |
-| 30    | 40   | 5/6  |
+| 30    | 30   | 5/7  |
 
 | Date          | Miles | Type | Total | Notes |
 | ------------- | ----- | ---- | ----- | ----- |
-| Sat 15th June | 6     | Easy | 30    | -     |
-| Fri 14th June | 6     | Easy | 24    | -     |
-| Thu 13th June | 6     | Easy | 18    | -     |
-| Wed 12th June | 6     | Easy | 12    | -     |
-| Tue 11th June | 6     | Easy | 6     | -     |
+| Sun 16th June | 5     | Easy | 30    | -     |
+| Sat 15th June | 5     | Easy | 25    | -     |
+| Fri 14th June | 5     | Easy | 20    | -     |
+| Thu 13th June | 5     | Easy | 15    | -     |
+| Wed 12th June | 5     | Easy | 10    | -     |
+| Tue 11th June | 5     | Easy | 5     | -     |
 | Mon 10th June | -     | Rest | 0     | -     |
 
 #### Week 24
