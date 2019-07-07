@@ -3,7 +3,7 @@ title: "Running"
 path: "/running"
 ---
 
-**Current goal:** Recover from the London Marathon and slowly increase milage to 40 miles per week.
+**Current goal:** Run 40 miles per week to maintain an aerobic base.
 
 ## 2019
 
