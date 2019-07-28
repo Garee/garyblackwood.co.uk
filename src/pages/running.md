@@ -9,7 +9,7 @@ path: "/running"
 
 | Miles | Goal |
 | ----- | ---- |
-| 845   | 1500 |
+| 962   | 1500 |
 
 ### Races
 
@@ -27,21 +27,69 @@ path: "/running"
 
 ### Log
 
+#### Week 30
+
+| Miles | Goal | Days |
+| ----- | ---- | ---- |
+| 40    | 40   | 6/7  |
+
+| Date          | Miles | Type     | Total | Notes                       |
+| ------------- | ----- | -------- | ----- | --------------------------- |
+| Sun 14th July | 10    | Easy     | 40    | -                           |
+| Sat 13th July | 4     | Recovery | 30    | -                           |
+| Fri 12th July | 6     | Tempo    | 26    | It was super warm and hard. |
+| Thu 11th July | 4     | Easy     | 20    | Played football             |
+| Wed 10th July | 9     | Easy     | 16    | -                           |
+| Tue 9th July  | 7     | Easy     | 7     | -                           |
+| Mon 8th July  | -     | -        | -     | Played football.            |
+
+#### Week 29
+
+| Miles | Goal | Days |
+| ----- | ---- | ---- |
+| 40    | 40   | 5/7  |
+
+| Date          | Miles | Type  | Total | Notes            |
+| ------------- | ----- | ----- | ----- | ---------------- |
+| Sun 14th July | 6     | Easy  | 40    | -                |
+| Sat 13th July | 10    | -     | 34    | -                |
+| Fri 12th July | 7     | Tempo | 24    | -                |
+| Thu 11th July | -     | Tempo | 17    | Played football  |
+| Wed 10th July | 9     | Easy  | 17    | -                |
+| Tue 9th July  | 8     | Easy  | 8     | -                |
+| Mon 8th July  | -     | -     | -     | Played football. |
+
+#### Week 28
+
+| Miles | Goal | Days |
+| ----- | ---- | ---- |
+| 36    | 40   | 5/7  |
+
+| Date          | Miles | Type | Total | Notes            |
+| ------------- | ----- | ---- | ----- | ---------------- |
+| Sun 14th July | 13.1  | Easy | 36    | -                |
+| Sat 13th July | 5     | -    | 23    | -                |
+| Fri 12th July | -     | -    | 18    | Played football. |
+| Thu 11th July | 7     | Easy | 18    | -                |
+| Wed 10th July | 7     | Easy | 11    | -                |
+| Tue 9th July  | 4     | Easy | 4     | -                |
+| Mon 8th July  | -     | -    | -     | Played football. |
+
 #### Week 27
 
 | Miles | Goal | Days |
 | ----- | ---- | ---- |
 | 40    | 40   | 6/7  |
 
-| Date          | Miles | Type | Total | Notes                                        |
-| ------------- | ----- | ---- | ----- | -------------------------------------------- |
-| Sun 30th June | 6     | -    | 40    | -                                            |
-| Sat 29th June | 6     | -    | 34    | Race: Victoria Parkrun 5K - 17:42, 3rd Place |
-| Fri 28th June | 7     | Easy | 28    | -                                            |
-| Thu 27th June | 7     | Easy | 21    | -                                            |
-| Wed 26th June | 7     | Easy | 14    | -                                            |
-| Tue 25th June | 7     | Easy | 7     | -                                            |
-| Mon 24th June | -     | -    | -     | Played 5s                                    |
+| Date         | Miles | Type | Total | Notes                                        |
+| ------------ | ----- | ---- | ----- | -------------------------------------------- |
+| Sun 7th July | 6     | -    | 40    | -                                            |
+| Sat 6th July | 6     | -    | 34    | Race: Victoria Parkrun 5K - 17:42, 3rd Place |
+| Fri 5th July | 7     | Easy | 28    | -                                            |
+| Thu 4th July | 7     | Easy | 21    | -                                            |
+| Wed 3rd July | 7     | Easy | 14    | -                                            |
+| Tue 2nd July | 7     | Easy | 7     | -                                            |
+| Mon 1st July | -     | -    | -     | Played 5s                                    |
 
 #### Week 26
 
