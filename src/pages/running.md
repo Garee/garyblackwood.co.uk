@@ -3,7 +3,7 @@ title: "Running"
 path: "/running"
 ---
 
-**Current goal:** Run 40 miles per week to maintain an aerobic base.
+**Currently:** Building an aerobic base before starting a training cycle for the Manchester Marathon.
 
 ## 2019
 

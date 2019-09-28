@@ -16,7 +16,7 @@ export default () => (
       helps others gain insights from their data.
     </p>
     <p>
-      Soon, I'll also be a postgraduate student at{" "}
+      I'm also a postgraduate student at{" "}
       <a href="https://www.gla.ac.uk">The University of Glasgow</a>, studying
       part-time to attain a MSc Data Analytics.
     </p>
