@@ -9,9 +9,15 @@ path: "/running"
 
 | Miles | Goal |
 | ----- | ---- |
-| 1038  | 1500 |
+| 1700  | 1500 |
 
 ### Races
+
+#### [Victoria Parkrun 5K](https://www.strava.com/activities/2916527080) - 18:03
+
+- **Date:** 7th December 2019
+- **Distance:** 5 Kilometers
+- **Average pace:** 5:48 min/mile
 
 #### [Victoria Parkrun 5K](https://www.strava.com/activities/2606195825) - 18:07
 
