@@ -6,9 +6,8 @@ export default () => (
   <AboutLayout>
     <p>I'm a developer living in Glasgow, Scotland.</p>
     <p>
-      You can find me on <a href="https://github.com/Garee">Github</a>,{" "}
-      <a href="https://twitter.com/gblackwd">Twitter</a>, and{" "}
-      <a href="https://www.strava.com/athletes/25189775">Strava</a>.
+      You can find me on <a href="https://github.com/Garee">Github</a> and{" "}
+      <a href="https://twitter.com/gblackwd">Twitter.</a>
     </p>
     <p>
       I'm a senior software developer at{" "}
@@ -28,8 +27,7 @@ export default () => (
     </p>
     <p>I was born and grew up in Glasgow, and so far its been pretty good.</p>
     <p>
-      I enjoy <a href="/running">distance running</a>, playing{" "}
-      <a href="https://www.chess.com/member/garee_chess">chess online</a>,{" "}
+      I enjoy <a href="/running">distance running</a>,{" "}
       <a href="/projects">programming</a> and video games.
     </p>
     <p>

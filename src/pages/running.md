@@ -3,13 +3,27 @@ title: "Running"
 path: "/running"
 ---
 
-**Currently:** Building an aerobic base before starting a training cycle for the Manchester Marathon.
+**Currently:** Trying to maintain an aerobic base during the COVID-19 lockdown.
+
+## 2020
+
+| Miles | Goal |
+| ----- | ---- |
+| TBC   | 2020 |
+
+### Races
+
+#### [Inverness Half Marathon](https://www.invernesshalfmarathon.co.uk/results/1/2020/?epage=1&sort=Position&text-search=Blackwood) - 1:22:27
+
+- **Date:** 8th March 2020
+- **Distance:** 13.1 Miles
+- **Average pace:** 6:17 min/mile
 
 ## 2019
 
 | Miles | Goal |
 | ----- | ---- |
-| 1700  | 1500 |
+| 1850  | 1500 |
 
 ### Races
 
