@@ -9,7 +9,7 @@ path: "/running"
 
 | Miles | Goal |
 | ----- | ---- |
-| TBC   | 2020 |
+| 658   | 2020 |
 
 ### Races
 
