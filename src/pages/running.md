@@ -9,7 +9,7 @@ path: "/running"
 
 | Miles | Goal |
 | ----- | ---- |
-| 658   | 2020 |
+| 886   | 2020 |
 
 ### Races
 
