@@ -3,13 +3,13 @@ title: "Running"
 path: "/running"
 ---
 
-**Currently:** Trying to maintain an aerobic base during the COVID-19 lockdown.
+**Currently:** Training for 5KM personal best.
 
 ## 2020
 
 | Miles | Goal |
 | ----- | ---- |
-| 886   | 2020 |
+| 1953  | 2020 |
 
 ### Races
 
