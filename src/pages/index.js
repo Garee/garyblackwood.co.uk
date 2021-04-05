@@ -4,11 +4,6 @@ import AboutLayout from "../components/layouts/about";
 
 export default () => (
   <AboutLayout>
-    <p>I'm a developer living in Glasgow, Scotland.</p>
-    <p>
-      You can find me on <a href="https://github.com/Garee">Github</a> and{" "}
-      <a href="https://twitter.com/gblackwd">Twitter.</a>
-    </p>
     <p>
       I'm a senior software developer at{" "}
       <a href="https://www.sas.com">SAS Institute</a>, creating software that
@@ -29,6 +24,9 @@ export default () => (
     <p>
       I enjoy <a href="/running">distance running</a>,{" "}
       <a href="/projects">programming</a> and video games.
+    </p>
+    <p>
+      You can find me on <a href="https://github.com/Garee">Github</a>.
     </p>
     <p>
       Want to chat? Feel free to{" "}

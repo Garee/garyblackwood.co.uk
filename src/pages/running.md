@@ -3,13 +3,11 @@ title: "Running"
 path: "/running"
 ---
 
-**Currently:** Training for 5KM personal best.
-
 ## 2020
 
 | Miles | Goal |
 | ----- | ---- |
-| 1953  | 2020 |
+| 2073  | 2020 |
 
 ### Races
 
