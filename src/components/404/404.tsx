@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import Illustration from "../images/illustrations/404.svg";
+import Illustration from "../../images/illustrations/404.svg";
 
 import * as styles from "./404.module.css";
 

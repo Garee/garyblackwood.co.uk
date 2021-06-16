@@ -1,7 +1,7 @@
 import React from "react";
 
-import BaseLayout from "../components/layouts/base";
-import PhotoGallery from "../components/photo-gallery";
+import BaseLayout from "../components/layouts/base/base";
+import PhotoGallery from "../components/photo-gallery/photo-gallery";
 
 const photos = [
     {

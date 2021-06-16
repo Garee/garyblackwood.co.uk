@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import BaseLayout from "./base";
+import BaseLayout from "../base/base";
 import * as styles from "./about.module.css";
 
 const AboutLayout = ({ children }: { children: any }) => {

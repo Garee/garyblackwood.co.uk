@@ -1,6 +1,6 @@
 import React from "react";
 
-import AboutLayout from "../components/layouts/about";
+import AboutLayout from "../components/layouts/about/about";
 
 const IndexPage = () => (
     <AboutLayout>

@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 
-import BaseLayout from "../components/layouts/base";
+import BaseLayout from "../components/layouts/base/base";
 
 import * as styles from "./blog.module.css";
 

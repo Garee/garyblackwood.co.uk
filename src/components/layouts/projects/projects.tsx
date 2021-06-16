@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-import BaseLayout from "./base";
+import BaseLayout from "../base/base";
 
 import * as styles from "./projects.module.css";
 

@@ -1,9 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "../partials/header";
-import Footer from "../partials/footer";
-import SEO from "../partials/seo";
+import Header from "../../partials/header/header";
+import Footer from "../../partials/footer/footer";
+import SEO from "../../partials/seo";
 
 import * as styles from "./base.module.css";
 
