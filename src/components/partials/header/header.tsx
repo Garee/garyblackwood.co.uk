@@ -105,6 +105,7 @@ class NavigationHeader extends React.Component<
 }
 
 const navLinks = [
+    /* TODO: Enable when I have at least one blog post.
     {
         node: {
             frontmatter: {
@@ -113,6 +114,7 @@ const navLinks = [
             },
         },
     },
+    */
     {
         node: {
             frontmatter: {
