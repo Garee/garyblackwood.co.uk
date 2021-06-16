@@ -32,7 +32,7 @@ module.exports = {
                 name: "Gary Blackwood",
                 short_name: "Gary",
                 start_url: "/",
-                background_color: "#4285f4",
+                background_color: "#2a9d8f",
                 theme_color: "#4285f4",
                 display: "standalone",
                 icon: "src/images/manifest/android-chrome-512x512.png",
