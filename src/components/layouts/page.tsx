@@ -3,9 +3,9 @@ import { graphql } from "gatsby";
 
 import BaseLayout from "./base";
 
-import { page as pageStyle } from "./page.module.css";
+import * as styles from "./page.module.css";
 
-const PageLayout = ({ data }) => {
+const PageLayout = ({ data }: { data: any }) => {
     const { markdownRemark: page } = data;
     return (
         <BaseLayout
@@ -13,7 +13,7 @@ const PageLayout = ({ data }) => {
             description={page.frontmatter.description}
         >
             <section
-                className={pageStyle}
+                className={styles.page}
                 dangerouslySetInnerHTML={{ __html: page.html }}
             />
         </BaseLayout>

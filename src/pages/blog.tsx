@@ -3,24 +3,24 @@ import { graphql, Link } from "gatsby";
 
 import BaseLayout from "../components/layouts/base";
 
-import { excerpt, blog } from "./blog.module.css";
+import * as styles from "./blog.module.css";
 
-const BlogPage = ({ data }) => {
+const BlogPage = ({ data }: { data: any }) => {
     const { edges: posts } = data.allMarkdownRemark;
 
-    const postList = posts.map(({ node: post }) => (
+    const postList = posts.map(({ node: post }: { node: any }) => (
         <div key={post.id}>
             <h2>
                 <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
             </h2>
             <small>{post.frontmatter.date}</small>
-            <p className={excerpt}>{post.excerpt}</p>
+            <p className={styles.excerpt}>{post.excerpt}</p>
         </div>
     ));
 
     return (
         <BaseLayout title="Blog">
-            <section className={blog}>{postList}</section>
+            <section className={styles.blog}>{postList}</section>
         </BaseLayout>
     );
 };

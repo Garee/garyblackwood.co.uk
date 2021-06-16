@@ -1,11 +1,23 @@
 import React from "react";
 import Gallery from "react-photo-gallery";
 
-import { photoGallery } from "./photo-gallery.module.css";
+import * as styles from "./photo-gallery.module.css";
 
-export default class PhotoGallery extends React.Component {
-    constructor(props) {
-        super();
+interface PhotoGalleryProps {
+    photos: any[];
+}
+
+interface PhotoGalleryState {
+    images: any[];
+    currentImage: number;
+}
+
+export default class PhotoGallery extends React.Component<
+    PhotoGalleryProps,
+    PhotoGalleryState
+> {
+    constructor(props: PhotoGalleryProps) {
+        super(props);
         this.state = {
             images: props.photos,
             currentImage: 0,
@@ -24,9 +36,9 @@ export default class PhotoGallery extends React.Component {
         });
     };
 
-    render = () => {
+    override render = () => {
         return (
-            <section className={photoGallery}>
+            <section className={styles.photoGallery}>
                 <Gallery photos={this.state.images} />
             </section>
         );

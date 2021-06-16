@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 
 import BaseLayout from "./base";
 
-import { projects } from "./projects.module.css";
+import * as styles from "./projects.module.css";
 
 const ProjectsLayout = () => {
     const { allMarkdownRemark: data } = useStaticQuery(graphql`
@@ -25,7 +25,7 @@ const ProjectsLayout = () => {
     return (
         <BaseLayout title="Projects">
             <section
-                className={projects}
+                className={styles.projects}
                 dangerouslySetInnerHTML={{ __html: projectsHtml }}
             />
         </BaseLayout>

@@ -7,6 +7,8 @@ module.exports = {
         githubHandle: "Garee",
     },
     plugins: [
+        // To compile Typescript.
+        "gatsby-plugin-typescript",
         // To preprocess styles.
         "gatsby-plugin-postcss",
         // To add responsive and high performance images.

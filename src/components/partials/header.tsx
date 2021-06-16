@@ -1,20 +1,25 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 
-import {
-    container,
-    hamburger,
-    line,
-    header,
-    activeLink,
-    overlay,
-    hidden,
-    sidebar,
-} from "./header.module.css";
+import * as styles from "./header.module.css";
 
-class NavigationHeader extends React.Component {
-    constructor(props) {
-        super();
+interface NavigationHeaderProps {
+    title: string;
+    pages: any[];
+}
+
+interface NavigationHeaderState {
+    title: string;
+    pages: any[];
+    showSidebar: boolean;
+}
+
+class NavigationHeader extends React.Component<
+    NavigationHeaderProps,
+    NavigationHeaderState
+> {
+    constructor(props: any) {
+        super(props);
         this.state = {
             title: props.title,
             pages: props.pages,
@@ -24,7 +29,7 @@ class NavigationHeader extends React.Component {
 
     onHamburgerClick() {
         this.setState({
-            showSidebar: !this.showSidebar,
+            showSidebar: !this.state.showSidebar,
         });
     }
 
@@ -34,24 +39,27 @@ class NavigationHeader extends React.Component {
         });
     }
 
-    render() {
+    override render() {
         const hamburgerMenu = (
-            <div className={hamburger} onClick={() => this.onHamburgerClick()}>
-                <div className={line} />
-                <div className={line} />
-                <div className={line} />
+            <div
+                className={styles.hamburger}
+                onClick={() => this.onHamburgerClick()}
+            >
+                <div className={styles.line} />
+                <div className={styles.line} />
+                <div className={styles.line} />
             </div>
         );
 
         const links = this.state.pages
-            .sort((p, q) =>
+            .sort((p: any, q: any) =>
                 p.node.frontmatter.title.localeCompare(q.node.frontmatter.title)
             )
-            .map(({ node: page }) => (
+            .map(({ node: page }: { node: any }) => (
                 <Link
                     to={page.frontmatter.path}
                     key={page.frontmatter.path}
-                    activeClassName={activeLink}
+                    activeClassName={styles.activeLink}
                     onClick={() => this.setState({ showSidebar: false })}
                 >
                     {page.frontmatter.title}
@@ -59,8 +67,8 @@ class NavigationHeader extends React.Component {
             ));
 
         return (
-            <header className={header}>
-                <div className={container}>
+            <header className={styles.header}>
+                <div className={styles.container}>
                     {hamburgerMenu}
                     <h1>
                         <Link to="/">{this.state.title}</Link>
@@ -70,15 +78,20 @@ class NavigationHeader extends React.Component {
                     {this.state.showSidebar && (
                         <aside>
                             <div
-                                className={overlay}
+                                className={styles.overlay}
                                 onClick={() => this.onOverlayClick()}
                             />
                             <div
                                 className={
-                                    !this.state.showSidebar ? hidden : sidebar
+                                    !this.state.showSidebar
+                                        ? styles.hidden
+                                        : styles.sidebar
                                 }
                             >
-                                <Link to="/" activeClassName={activeLink}>
+                                <Link
+                                    to="/"
+                                    activeClassName={styles.activeLink}
+                                >
                                     Gary Blackwood
                                 </Link>
                                 {links}
@@ -110,7 +123,7 @@ const navLinks = [
     },
 ];
 
-const Header = ({ title }) => {
+const Header = ({ title }: { title: string }) => {
     const { allMarkdownRemark } = useStaticQuery(
         graphql`
             query {

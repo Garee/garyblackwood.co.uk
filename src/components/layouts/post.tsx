@@ -3,18 +3,18 @@ import { graphql } from "gatsby";
 
 import BaseLayout from "./base";
 
-import { post as postStyle, title, date } from "./post.module.css";
+import * as styles from "./post.module.css";
 
-const Post = ({ data }) => {
+const Post = ({ data }: { data: any }) => {
     const { markdownRemark: post } = data;
     return (
         <BaseLayout
             title={post.frontmatter.title}
             meta={[{ name: "keywords", content: post.frontmatter.tags }]}
         >
-            <article className={postStyle}>
-                <h1 className={title}>{post.frontmatter.title}</h1>
-                <small className={date}>{post.frontmatter.date}</small>
+            <article className={styles.post}>
+                <h1 className={styles.title}>{post.frontmatter.title}</h1>
+                <small className={styles.date}>{post.frontmatter.date}</small>
                 {post.tableOfContents && (
                     <div>
                         <h2>Table of Contents</h2>

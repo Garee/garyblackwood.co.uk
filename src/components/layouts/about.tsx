@@ -1,12 +1,10 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-
 import BaseLayout from "./base";
+import * as styles from "./about.module.css";
 
-import { about, text, avatar } from "./about.module.css";
-
-const AboutLayout = ({ children }) => {
+const AboutLayout = ({ children }: { children: any }) => {
     const data = useStaticQuery(graphql`
         query {
             file(relativePath: { eq: "avatar.jpg" }) {
@@ -19,8 +17,8 @@ const AboutLayout = ({ children }) => {
 
     return (
         <BaseLayout title="About">
-            <section className={about}>
-                <div className={text}>
+            <section className={styles.about}>
+                <div className={styles.text}>
                     <h1>
                         Hello{" "}
                         <span role="img" aria-label="Waving" title="Waving">
@@ -29,7 +27,7 @@ const AboutLayout = ({ children }) => {
                     </h1>
                     {children}
                 </div>
-                <div className={avatar}>
+                <div className={styles.avatar}>
                     <GatsbyImage
                         image={data.file.childImageSharp.gatsbyImageData}
                         alt="Gary Blackwood"

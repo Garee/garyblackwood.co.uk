@@ -5,9 +5,19 @@ import Header from "../partials/header";
 import Footer from "../partials/footer";
 import SEO from "../partials/seo";
 
-import { content } from "./base.module.css";
+import * as styles from "./base.module.css";
 
-const BaseLayout = ({ title, description, meta, children }) => {
+const BaseLayout = ({
+    title,
+    description,
+    meta,
+    children,
+}: {
+    title: string;
+    description?: string;
+    meta?: any;
+    children?: any;
+}) => {
     const { site } = useStaticQuery(
         graphql`
             query {
@@ -24,7 +34,7 @@ const BaseLayout = ({ title, description, meta, children }) => {
         <div>
             <SEO title={title} description={description} meta={meta} />
             <Header title={site.siteMetadata.title} />
-            <div className={content}>
+            <div className={styles.content}>
                 <main>{children}</main>
                 <Footer />
             </div>

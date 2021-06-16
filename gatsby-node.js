@@ -1,10 +1,10 @@
 const path = require("path");
 
 const templates = {
-    page: path.resolve("src/components/layouts/page.js"),
-    post: path.resolve("src/components/layouts/post.js"),
-    projects: path.resolve("src/components/layouts/projects.js"),
-    comingSoon: path.resolve("src/components/layouts/coming-soon.js"),
+    page: path.resolve("src/components/layouts/page.tsx"),
+    post: path.resolve("src/components/layouts/post.tsx"),
+    projects: path.resolve("src/components/layouts/projects.tsx"),
+    comingSoon: path.resolve("src/components/layouts/coming-soon.tsx"),
 };
 
 const allMarkdownFilesQuery = `
