@@ -4,6 +4,7 @@ date: "2017-07-12"
 title: "Ulysses"
 tags: ["travel"]
 cover:
+description: ""
 ---
 
 Mutley, you snickering, floppy eared hound. When courage is needed, you're never around. Those medals you wear on your moth-eaten chest should be there for bungling at which you are best. So, stop that pigeon, stop that pigeon, stop that pigeon, stop that pigeon, stop that pigeon, stop that pigeon, stop that pigeon. Howwww! Nab him, jab him, tab him, grab him, stop that pigeon now.

@@ -25,7 +25,8 @@ const IndexPage = () => (
         </p>
         <p>
             I enjoy <a href="/running">distance running</a>,{" "}
-            <a href="/projects">programming</a> and video games.
+            <a href="/projects">programming</a>, metal 🤘, chess, and video
+            games.
         </p>
         <p>
             You can find me on <a href="https://github.com/Garee">Github</a>.

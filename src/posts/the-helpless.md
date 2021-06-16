@@ -3,6 +3,7 @@ path: "/blog/the-helpless"
 date: "2016-01-12"
 title: "The Helpless"
 tags: ["hope"]
+description: ""
 ---
 
 ## Heading 1

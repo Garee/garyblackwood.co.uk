@@ -3,6 +3,7 @@ title: "Coder"
 date: "2018-01-06"
 path: "/blog/coder"
 keywords: []
+description: ""
 ---
 
 ## Lorem Ipsum
@@ -13,15 +14,15 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque facilisi temp
 
 ```jsx
 const Page = ({ data }) => {
-  const { markdownRemark: page } = data;
-  return (
-    <BaseLayout title={page.frontmatter.title}>
-      <section
-        className={styles.page}
-        dangerouslySetInnerHTML={{ __html: page.html }}
-      />
-    </BaseLayout>
-  );
+    const { markdownRemark: page } = data;
+    return (
+        <BaseLayout title={page.frontmatter.title}>
+            <section
+                className={styles.page}
+                dangerouslySetInnerHTML={{ __html: page.html }}
+            />
+        </BaseLayout>
+    );
 };
 ```
 

@@ -4,6 +4,7 @@ date: "2018-08-13"
 title: "Until Tomorrow"
 tags: ["programming", "javascript"]
 cover:
+description: ""
 ---
 
 True boisterous dissimilar gate water rendered added attention help message roof brother.
@@ -21,12 +22,12 @@ Viewing tried questions knew. About preserved music wrote it away arranging nort
 ```javascript
 // In your gatsby-config.js
 plugins: [
-  {
-    resolve: `gatsby-transformer-remark`,
-    options: {
-      plugins: [`gatsby-remark-prismjs`]
-    }
-  }
+    {
+        resolve: `gatsby-transformer-remark`,
+        options: {
+            plugins: [`gatsby-remark-prismjs`],
+        },
+    },
 ];
 ```
 
