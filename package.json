@@ -75,18 +75,15 @@
     "lint-staged": {
         "*.js": [
             "prettier --write",
-            "eslint --fix",
-            "git add"
+            "eslint --fix"
         ],
         ".ts": [
             "pretter --write",
-            "eslint --fix",
-            "git add"
+            "eslint --fix"
         ],
         "*.css": [
             "prettier --write",
-            "stylelint --fix",
-            "git add"
+            "stylelint --fix"
         ]
     }
 }
