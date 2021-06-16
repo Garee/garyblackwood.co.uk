@@ -67,3 +67,6 @@ yarn-error.log
 
 # IDE settings
 .vscode
+
+# https://github.com/typicode/husky
+.husky

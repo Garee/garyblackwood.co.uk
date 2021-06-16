@@ -13,6 +13,7 @@
         "clean": "gatsby clean",
         "deploy": "scp -r public/* deploy@garyblackwood.co.uk:~/garyblackwood.co.uk",
         "format": "prettier --write *.tsx src/**/*.{js,css}",
+        "prepare": "husky install",
         "typecheck": "tsc --noEmit",
         "lint:js": "eslint --fix *.js src/**/*.js",
         "lint:ts": "eslint --fix src/**/*.tsx",
