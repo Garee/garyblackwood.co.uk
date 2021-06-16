@@ -10,13 +10,15 @@
         display: flex;
         align-items: flex-start;
 
-        > div,
-        img {
+        > div {
             border-radius: 50%;
+            box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.5);
         }
 
-        div {
-            box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.5);
+        .avatarImg {
+            border-radius: 50%;
+            animation-duration: 2s;
+            animation-name: fadeIn;
         }
     }
 }
@@ -29,5 +31,14 @@
             justify-content: center;
             margin-bottom: 2.5rem;
         }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
