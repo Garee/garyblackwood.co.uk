@@ -10,7 +10,7 @@ const SEO = ({
 }: {
     description: string;
     lang: string;
-    meta: HTMLMetaElement[];
+    meta: Array<{ name: string; content: string }>;
     title: string;
 }) => {
     const { site } = useStaticQuery(

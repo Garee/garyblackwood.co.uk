@@ -5,10 +5,10 @@ import BaseLayout from "../components/layouts/base/base";
 
 import * as styles from "./blog.module.css";
 
-const BlogPage = ({ data }: { data: any }) => {
+const BlogPage = ({ data }: { data: QueryData }) => {
     const { edges: posts } = data.allMarkdownRemark;
 
-    const postList = posts.map(({ node: post }: { node: any }) => (
+    const postList = posts.map(({ node: post }: { node: Post }) => (
         <div key={post.id}>
             <h2>
                 <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
@@ -45,5 +45,22 @@ export const query = graphql`
         }
     }
 `;
+
+interface QueryData {
+    allMarkdownRemark: {
+        edges: Array<{
+            node: Post;
+        }>;
+    };
+}
+interface Post {
+    id: string;
+    excerpt: string;
+    frontmatter: {
+        title: string;
+        date: string;
+        path: string;
+    };
+}
 
 export default BlogPage;

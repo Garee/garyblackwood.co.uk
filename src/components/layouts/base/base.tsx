@@ -15,8 +15,8 @@ const BaseLayout = ({
 }: {
     title: string;
     description?: string;
-    meta?: any;
-    children?: any;
+    meta?: Array<{ name: string; content: any }>;
+    children?: JSX.Element;
 }) => {
     const { site } = useStaticQuery(
         graphql`

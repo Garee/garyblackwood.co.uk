@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import BaseLayout from "../base/base";
 import * as styles from "./about.module.css";
 
-const AboutLayout = ({ children }: { children: any }) => {
+const AboutLayout = ({ children }: { children: JSX.Element[] }) => {
     const data = useStaticQuery(graphql`
         query {
             file(relativePath: { eq: "avatar.jpg" }) {

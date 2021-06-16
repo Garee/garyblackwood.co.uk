@@ -5,12 +5,12 @@ import * as styles from "./header.module.css";
 
 interface NavigationHeaderProps {
     title: string;
-    pages: any[];
+    pages: Pages;
 }
 
 interface NavigationHeaderState {
     title: string;
-    pages: any[];
+    pages: Pages;
     showSidebar: boolean;
 }
 
@@ -18,7 +18,7 @@ class NavigationHeader extends React.Component<
     NavigationHeaderProps,
     NavigationHeaderState
 > {
-    constructor(props: any) {
+    constructor(props: NavigationHeaderProps) {
         super(props);
         this.state = {
             title: props.title,
@@ -52,10 +52,10 @@ class NavigationHeader extends React.Component<
         );
 
         const links = this.state.pages
-            .sort((p: any, q: any) =>
+            .sort((p, q) =>
                 p.node.frontmatter.title.localeCompare(q.node.frontmatter.title)
             )
-            .map(({ node: page }: { node: any }) => (
+            .map(({ node: page }) => (
                 <Link
                     to={page.frontmatter.path}
                     key={page.frontmatter.path}
@@ -124,6 +124,14 @@ const navLinks = [
         },
     },
 ];
+
+type Pages = Array<{ node: Page }>;
+interface Page {
+    frontmatter: {
+        title: string;
+        path: string;
+    };
+}
 
 const Header = ({ title }: { title: string }) => {
     const { allMarkdownRemark } = useStaticQuery(

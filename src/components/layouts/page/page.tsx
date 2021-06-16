@@ -5,7 +5,7 @@ import BaseLayout from "../base/base";
 
 import * as styles from "./page.module.css";
 
-const PageLayout = ({ data }: { data: any }) => {
+const PageLayout = ({ data }: { data: QueryData }) => {
     const { markdownRemark: page } = data;
     return (
         <BaseLayout
@@ -26,9 +26,20 @@ export const query = graphql`
             html
             frontmatter {
                 title
+                description
             }
         }
     }
 `;
+
+interface QueryData {
+    markdownRemark: {
+        html: string;
+        frontmatter: {
+            title: string;
+            description: string;
+        };
+    };
+}
 
 export default PageLayout;

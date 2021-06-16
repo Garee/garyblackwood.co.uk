@@ -1,14 +1,14 @@
 import React from "react";
-import Gallery from "react-photo-gallery";
+import Gallery, { PhotoProps } from "react-photo-gallery";
 
 import * as styles from "./photo-gallery.module.css";
 
 interface PhotoGalleryProps {
-    photos: any[];
+    photos: Array<PhotoProps<any>>;
 }
 
 interface PhotoGalleryState {
-    images: any[];
+    images: Array<PhotoProps<any>>;
     currentImage: number;
 }
 

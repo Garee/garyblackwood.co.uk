@@ -5,7 +5,7 @@ import BaseLayout from "../base/base";
 
 import * as styles from "./post.module.css";
 
-const Post = ({ data }: { data: any }) => {
+const Post = ({ data }: { data: QueryData }) => {
     const { markdownRemark: post } = data;
     return (
         <BaseLayout
@@ -31,8 +31,6 @@ const Post = ({ data }: { data: any }) => {
     );
 };
 
-export default Post;
-
 export const query = graphql`
     query ($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } }) {
@@ -47,3 +45,18 @@ export const query = graphql`
         }
     }
 `;
+
+interface QueryData {
+    markdownRemark: {
+        html: string;
+        tableOfContents: string;
+        frontmatter: {
+            date: string;
+            path: string;
+            title: string;
+            tags: string[];
+        };
+    };
+}
+
+export default Post;
