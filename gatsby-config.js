@@ -33,7 +33,7 @@ module.exports = {
                 short_name: "Gary",
                 start_url: "/",
                 background_color: "#2a9d8f",
-                theme_color: "#4285f4",
+                theme_color: "#2a9d8f",
                 display: "standalone",
                 icon: "src/images/manifest/android-chrome-512x512.png",
             },
@@ -85,7 +85,7 @@ module.exports = {
             resolve: "gatsby-plugin-nprogress",
             options: {
                 // Setting a color is optional.
-                color: "#4285f4",
+                color: "#2a9d8f",
                 // Disable the loading spinner.
                 showSpinner: false,
             },
