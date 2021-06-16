@@ -1,12 +1,7 @@
 @import "./variables.css";
 
-body {
-  /* Override the inline padding that Lightbox adds. */
-  padding: 0 !important;
-}
-
 a {
-  &:hover {
-    color: $primaryColor;
-  }
+    &:hover {
+        color: $primaryColor;
+    }
 }

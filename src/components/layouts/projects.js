@@ -3,31 +3,33 @@ import { graphql, useStaticQuery } from "gatsby";
 
 import BaseLayout from "./base";
 
-import styles from "./projects.module.css";
+import { projects } from "./projects.module.css";
 
-export default () => {
-  const { allMarkdownRemark: data } = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(
-        filter: { frontmatter: { path: { eq: "/projects" } } }
-      ) {
-        edges {
-          node {
-            html
-          }
+const ProjectsLayout = () => {
+    const { allMarkdownRemark: data } = useStaticQuery(graphql`
+        query {
+            allMarkdownRemark(
+                filter: { frontmatter: { path: { eq: "/projects" } } }
+            ) {
+                edges {
+                    node {
+                        html
+                    }
+                }
+            }
         }
-      }
-    }
-  `);
+    `);
 
-  const projects = data.edges[0].node;
+    const projectsHtml = data.edges[0].node.html;
 
-  return (
-    <BaseLayout title="Projects">
-      <section
-        className={styles.projects}
-        dangerouslySetInnerHTML={{ __html: projects.html }}
-      />
-    </BaseLayout>
-  );
+    return (
+        <BaseLayout title="Projects">
+            <section
+                className={projects}
+                dangerouslySetInnerHTML={{ __html: projectsHtml }}
+            />
+        </BaseLayout>
+    );
 };
+
+export default ProjectsLayout;

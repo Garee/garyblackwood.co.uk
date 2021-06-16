@@ -3,73 +3,56 @@ import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
 const SEO = ({ description, lang, meta, title }) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            twitterHandle
-          }
-        }
-      }
-    `
-  );
+    const { site } = useStaticQuery(
+        graphql`
+            query {
+                site {
+                    siteMetadata {
+                        title
+                        description
+                        author
+                    }
+                }
+            }
+        `
+    );
 
-  const metaDescription = description || site.siteMetadata.description;
+    const metaDescription = description || site.siteMetadata.description;
 
-  return (
-    <Helmet
-      htmlAttributes={{
-        lang
-      }}
-      title={title}
-      defer={false}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: "description",
-          content: metaDescription
-        },
-        {
-          property: "og:title",
-          content: title
-        },
-        {
-          property: "og:description",
-          content: metaDescription
-        },
-        {
-          property: "og:type",
-          content: "website"
-        },
-        {
-          name: "twitter:card",
-          content: "summary"
-        },
-        {
-          name: "twitter:creator",
-          content: site.siteMetadata.twitterHandle
-        },
-        {
-          name: "twitter:title",
-          content: title
-        },
-        {
-          name: "twitter:description",
-          content: metaDescription
-        }
-      ].concat(meta)}
-    />
-  );
+    return (
+        <Helmet
+            htmlAttributes={{
+                lang,
+            }}
+            title={title}
+            defer={false}
+            titleTemplate={`%s | ${site.siteMetadata.title}`}
+            meta={[
+                {
+                    name: "description",
+                    content: metaDescription,
+                },
+                {
+                    property: "og:title",
+                    content: title,
+                },
+                {
+                    property: "og:description",
+                    content: metaDescription,
+                },
+                {
+                    property: "og:type",
+                    content: "website",
+                },
+            ].concat(meta)}
+        />
+    );
 };
 
 SEO.defaultProps = {
-  lang: "en",
-  meta: [],
-  description: ""
+    lang: "en",
+    meta: [],
+    description: "",
 };
 
 export default SEO;

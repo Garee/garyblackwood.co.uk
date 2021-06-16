@@ -1,29 +1,29 @@
 .about {
-  display: flex;
-  justify-content: space-between;
-
-  .text {
-    flex-basis: 75%;
-  }
-
-  .avatar {
     display: flex;
-    align-items: flex-start;
+    justify-content: space-between;
 
-    div {
-      border-radius: 50%;
-      box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.5);
+    .text {
+        flex-basis: 75%;
     }
-  }
+
+    .avatar {
+        display: flex;
+        align-items: flex-start;
+
+        div {
+            border-radius: 50%;
+            box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.5);
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  .about {
-    flex-direction: column-reverse;
+    .about {
+        flex-direction: column-reverse;
 
-    .avatar {
-      justify-content: center;
-      margin-bottom: 2.5rem;
+        .avatar {
+            justify-content: center;
+            margin-bottom: 2.5rem;
+        }
     }
-  }
 }
