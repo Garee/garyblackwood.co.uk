@@ -11,6 +11,7 @@
         "build": "gatsby build",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
+        "build-deploy": "npm run clean && npm run build && npm run deploy",
         "deploy": "scp -r public/* deploy@garyblackwood.co.uk:~/garyblackwood.co.uk",
         "format": "prettier --write *.tsx src/**/*.{js,css}",
         "prepare": "husky install",

@@ -4,6 +4,7 @@ body {
     --fg-color: $fgColorLight;
     --bg-color: $bgColorLight;
     --primary-color: $primaryColorLight;
+    --shadow-color: rgba(0, 0, 0, 0.5);
 
     color: var(--fg-color);
     background-color: var(--bg-color);
@@ -13,6 +14,7 @@ body.dark {
     --fg-color: $fgColorDark;
     --bg-color: $bgColorDark;
     --primary-color: $primaryColorDark;
+    --shadow-color: rgba(255, 255, 255, 0.5);
 
     th,
     td {
@@ -30,4 +32,8 @@ a {
 
 hr {
     background: var(--fg-color);
+}
+
+.gatsby-highlight {
+    margin-bottom: 1.38em;
 }
