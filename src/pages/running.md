@@ -17,7 +17,7 @@ path: "/running"
     background-repeat: no-repeat;
     background-position: 10px center;
     border-radius: 3px;
-    background-image: url('http://badges.strava.com/logo-strava-echelon.png');
+    background-image: url("https://badges.strava.com/logo-strava-echelon.png");
 }
 
 .strava-badge img {
@@ -34,9 +34,9 @@ path: "/running"
 }
 </style>
 
-<a class="strava-badge" href='http://strava.com/athletes/25189775/badge' target="_clean">
+<a class="strava-badge" href='https://strava.com/athletes/25189775/badge' target="_clean">
     Follow me on
-    <img src="http://badges.strava.com/logo-strava.png" alt="Strava" height="13" width="51" />
+    <img src="https://badges.strava.com/logo-strava.png" alt="Strava" height="13" width="51" />
 </a>
 
 Each year I strive to run one mile for each year in the Gregorian calendar era.
