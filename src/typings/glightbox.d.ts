@@ -1,5 +1,5 @@
 interface IGlightbox {
-    open(): void;
+    openAt(idx: number): void;
 }
 
 declare module "glightbox" {

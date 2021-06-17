@@ -1,6 +1,5 @@
 import React from "react";
 import Gallery, { PhotoProps } from "react-photo-gallery";
-import Glightbox from "glightbox";
 import * as styles from "./photo-gallery.module.css";
 
 interface PhotoGalleryProps {
@@ -9,7 +8,7 @@ interface PhotoGalleryProps {
 
 interface PhotoGalleryState {
     images: Array<PhotoProps<any>>;
-    lightbox: IGlightbox;
+    lightbox?: IGlightbox;
 }
 
 export default class PhotoGallery extends React.Component<
@@ -20,17 +19,27 @@ export default class PhotoGallery extends React.Component<
         super(props);
         this.state = {
             images: props.photos,
-            lightbox: Glightbox({
-                elements: props.photos.map((p) => {
-                    p.href = p.src;
-                    return p;
-                }),
-            }),
         };
     }
 
-    openLightbox = () => {
-        this.state.lightbox.open();
+    openLightbox = (_: any, at: { index: number }) => {
+        if (!this.state.lightbox) {
+            const Glightbox = require("glightbox");
+            this.setState(
+                {
+                    ...this.state,
+                    lightbox: Glightbox({
+                        elements: this.state.images.map((i) => {
+                            i.href = i.src;
+                            return i;
+                        }),
+                    }),
+                },
+                () => this.state.lightbox?.openAt(at.index)
+            );
+        } else {
+            this.state.lightbox?.openAt(at.index);
+        }
     };
 
     override render = () => {
