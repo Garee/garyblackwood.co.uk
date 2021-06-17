@@ -5,19 +5,10 @@ import Moon from "../../../images/theme/moon.inline.svg";
 import Sun from "../../../images/theme/sun.inline.svg";
 
 import * as styles from "./footer.module.css";
+import { useEffect } from "react";
 
 const ThemeToggle = () => {
-    const [dark, setDark] = useState(prefersDarkTheme());
-
-    if (dark) {
-        document.body.classList.add("dark");
-    }
-
     function prefersDarkTheme() {
-        if (typeof window === "undefined") {
-            return false;
-        }
-
         const preference = window.localStorage.getItem("darkTheme");
         if (preference !== null) {
             return preference === "true";
@@ -38,6 +29,22 @@ const ThemeToggle = () => {
 
         setDark(!dark);
         window.localStorage.setItem("darkTheme", `${!dark}`);
+    }
+
+    const [hasMounted, setHasMounted] = useState(false);
+    const [dark, setDark] = useState(false);
+
+    useEffect(() => {
+        setHasMounted(true);
+    }, []);
+
+    if (!hasMounted) {
+        return null;
+    }
+
+    if (prefersDarkTheme() && !dark) {
+        setDark(true);
+        document.body.classList.add("dark");
     }
 
     return (
