@@ -44,6 +44,7 @@
         "gatsby-source-filesystem": "^3.7.1",
         "gatsby-transformer-remark": "^4.4.1",
         "gatsby-transformer-sharp": "^3.7.1",
+        "glightbox": "^3.0.9",
         "postcss": "^8.2.6",
         "postcss-import": "^14.0.2",
         "postcss-preset-env": "^6.7.0",

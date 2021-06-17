@@ -37,3 +37,19 @@ hr {
 .gatsby-highlight {
     margin-bottom: 1.38em;
 }
+
+html .glightbox-clean .gdesc-inner {
+    padding: 0.5em;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+}
+
+html .glightbox-mobile .glightbox-container {
+    .gdesc-inner {
+        background-color: transparent;
+    }
+
+    .gslide-desc {
+        color: white;
+    }
+}
