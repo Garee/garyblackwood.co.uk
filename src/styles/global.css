@@ -1,7 +1,33 @@
 @import "./variables.css";
 
-a {
-    &:hover {
-        color: $primaryColor;
+body {
+    --fg-color: $fgColorLight;
+    --bg-color: $bgColorLight;
+    --primary-color: $primaryColorLight;
+
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+}
+
+body.dark {
+    --fg-color: $fgColorDark;
+    --bg-color: $bgColorDark;
+    --primary-color: $primaryColorDark;
+
+    th,
+    td {
+        border-color: var(--fg-color);
     }
+}
+
+a {
+    color: var(--fg-color);
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+hr {
+    background: var(--fg-color);
 }

@@ -1,1 +1,7 @@
-$primaryColor: #2a9d8f;
+$primaryColorLight: #2a9d8f;
+$bgColorLight: white;
+$fgColorLight: black;
+
+$primaryColorDark: #2a9d8f;
+$bgColorDark: #001219;
+$fgColorDark: white;

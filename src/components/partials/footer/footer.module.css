@@ -3,3 +3,9 @@
 .footer {
     text-align: center;
 }
+
+.toggleTheme {
+    cursor: pointer;
+    margin: 0;
+    margin-left: 0.5rem;
+}
