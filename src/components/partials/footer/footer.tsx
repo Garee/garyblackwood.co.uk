@@ -14,6 +14,10 @@ const ThemeToggle = () => {
     }
 
     function prefersDarkTheme() {
+        if (typeof window === "undefined") {
+            return false;
+        }
+
         const preference = window.localStorage.getItem("darkTheme");
         if (preference !== null) {
             return preference === "true";
