@@ -34,7 +34,7 @@ path: "/running"
 }
 </style>
 
-<a class="strava-badge" href='https://strava.com/athletes/25189775/badge' target="_clean">
+<a class="strava-badge" href="https://strava.com/athletes/25189775" target="_clean">
     Follow me on
     <img src="https://badges.strava.com/logo-strava.png" alt="Strava" height="13" width="51" />
 </a>
