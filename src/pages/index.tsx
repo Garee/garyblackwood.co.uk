@@ -29,7 +29,8 @@ const IndexPage = () => (
             games.
         </p>
         <p>
-            You can find me on <a href="https://github.com/Garee">Github</a>.
+            You can find me on <a href="https://github.com/Garee">Github</a> and{" "}
+            <a href="https://linkedin.com/in/garyblackwood">LinkedIn</a>.
         </p>
         <p>
             Want to chat? Feel free to{" "}
