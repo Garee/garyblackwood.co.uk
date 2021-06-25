@@ -1,20 +1,20 @@
 @import "../../../styles/variables.css";
 
 .post {
-    .title {
-        margin-bottom: 0;
-    }
+  .title {
+    margin-bottom: 0;
+  }
 
-    .date {
-        display: block;
-        margin-bottom: 1rem;
-    }
+  .date {
+    display: block;
+    margin-bottom: 1rem;
+  }
 
-    pre {
-        margin-bottom: 1rem;
-    }
+  pre {
+    margin-bottom: 1rem;
+  }
 
-    ul {
-        margin-left: 1rem;
-    }
+  ul {
+    margin-left: 1rem;
+  }
 }

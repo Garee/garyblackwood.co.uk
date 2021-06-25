@@ -1,15 +1,15 @@
 @import "../../../styles/variables.css";
 
 .footer {
-    text-align: center;
+  text-align: center;
 }
 
 .toggleTheme {
-    cursor: pointer;
-    margin: 0;
-    margin-left: 0.5rem;
+  cursor: pointer;
+  margin: 0;
+  margin-left: 0.5rem;
 
-    &:hover {
-        transform: scale(1.5);
-    }
+  &:hover {
+    transform: scale(1.5);
+  }
 }

@@ -8,38 +8,38 @@ import SEO from "../../partials/seo";
 import * as styles from "./base.module.css";
 
 const BaseLayout = ({
-    title,
-    description,
-    meta,
-    children,
+  title,
+  description,
+  meta,
+  children,
 }: {
-    title: string;
-    description?: string;
-    meta?: Array<{ name: string; content: any }>;
-    children?: JSX.Element;
+  title: string;
+  description?: string;
+  meta?: Array<{ name: string; content: any }>;
+  children?: JSX.Element;
 }) => {
-    const { site } = useStaticQuery(
-        graphql`
-            query {
-                site {
-                    siteMetadata {
-                        title
-                    }
-                }
-            }
-        `
-    );
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  );
 
-    return (
-        <div>
-            <SEO title={title} description={description} meta={meta} />
-            <Header title={site.siteMetadata.title} />
-            <div className={styles.content}>
-                <main>{children}</main>
-                <Footer />
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <SEO title={title} description={description} meta={meta} />
+      <Header title={site.siteMetadata.title} />
+      <div className={styles.content}>
+        <main>{children}</main>
+        <Footer />
+      </div>
+    </div>
+  );
 };
 
 export default BaseLayout;

@@ -1,8 +1,8 @@
 interface IGlightbox {
-    openAt(idx: number): void;
+  openAt(idx: number): void;
 }
 
 declare module "glightbox" {
-    const content: (options) => Glightbox;
-    export = content;
+  const content: (options) => Glightbox;
+  export = content;
 }

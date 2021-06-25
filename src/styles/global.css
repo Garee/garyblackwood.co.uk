@@ -1,55 +1,55 @@
 @import "./variables.css";
 
 body {
-    --fg-color: $fgColorLight;
-    --bg-color: $bgColorLight;
-    --primary-color: $primaryColorLight;
-    --shadow-color: rgba(0, 0, 0, 0.5);
+  --fg-color: $fgColorLight;
+  --bg-color: $bgColorLight;
+  --primary-color: $primaryColorLight;
+  --shadow-color: rgba(0, 0, 0, 0.5);
 
-    color: var(--fg-color);
-    background-color: var(--bg-color);
+  color: var(--fg-color);
+  background-color: var(--bg-color);
 }
 
 body.dark {
-    --fg-color: $fgColorDark;
-    --bg-color: $bgColorDark;
-    --primary-color: $primaryColorDark;
-    --shadow-color: rgba(255, 255, 255, 0.5);
+  --fg-color: $fgColorDark;
+  --bg-color: $bgColorDark;
+  --primary-color: $primaryColorDark;
+  --shadow-color: rgba(255, 255, 255, 0.5);
 
-    th,
-    td {
-        border-color: var(--fg-color);
-    }
+  th,
+  td {
+    border-color: var(--fg-color);
+  }
 }
 
 a {
-    color: var(--fg-color);
+  color: var(--fg-color);
 
-    &:hover {
-        color: var(--primary-color);
-    }
+  &:hover {
+    color: var(--primary-color);
+  }
 }
 
 hr {
-    background: var(--fg-color);
+  background: var(--fg-color);
 }
 
 .gatsby-highlight {
-    margin-bottom: 1.38em;
+  margin-bottom: 1.38em;
 }
 
 html .glightbox-clean .gdesc-inner {
-    padding: 0.5em;
-    color: var(--fg-color);
-    background-color: var(--bg-color);
+  padding: 0.5em;
+  color: var(--fg-color);
+  background-color: var(--bg-color);
 }
 
 html .glightbox-mobile .glightbox-container {
-    .gdesc-inner {
-        background-color: transparent;
-    }
+  .gdesc-inner {
+    background-color: transparent;
+  }
 
-    .gslide-desc {
-        color: white;
-    }
+  .gslide-desc {
+    color: white;
+  }
 }
