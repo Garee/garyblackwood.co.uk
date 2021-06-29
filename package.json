@@ -24,7 +24,7 @@
     "clean": "gatsby clean",
     "build-deploy": "npm run clean && npm run build && npm run deploy",
     "deploy": "scp -r public/* deploy@garyblackwood.co.uk:~/garyblackwood.co.uk",
-    "format": "prettier --write *.js src/**/*.{json,ts,tsx,js,css}",
+    "format": "prettier --write *.{js,json} src/**/*.{json,ts,tsx,js,css}",
     "prepare": "husky install",
     "pre-commit": "npm run type-check && lint-staged",
     "type-check": "tsc --noEmit",

@@ -1,9 +1,7 @@
 body {
-  /**
-     * GHColors theme by Avi Aryan (http://aviaryan.in)
-     * Inspired by Github syntax coloring
-     */
-
+  /*
+   * GHColors theme by Avi Aryan (http://aviaryan.in)
+   */
   code[class*="language-"],
   pre[class*="language-"] {
     color: #393a34;
@@ -117,13 +115,12 @@ body {
 }
 
 body.dark {
-  /**
-     * Dracula Theme originally by Zeno Rocha [@zenorocha]
-     * https://draculatheme.com/
-     *
-     * Ported for PrismJS by Albert Vallverdu [@byverdu]
-     */
-
+  /*
+   * Dracula Theme originally by Zeno Rocha [@zenorocha]
+   * https://draculatheme.com/
+   *
+   * Ported for PrismJS by Albert Vallverdu [@byverdu]
+   */
   code[class*="language-"],
   pre[class*="language-"] {
     color: #f8f8f2;
