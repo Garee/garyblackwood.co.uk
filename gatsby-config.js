@@ -71,15 +71,6 @@ module.exports = {
         pathToConfigModule: "src/styles/typography",
       },
     },
-    // To allow for SVG processing and loading.
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /images\/illustrations/,
-        },
-      },
-    },
     // To show an nprogress indicator when a page is loading slowly.
     {
       resolve: "gatsby-plugin-nprogress",
@@ -114,6 +105,10 @@ module.exports = {
     // To generate an atom.xml for an RSS feed.
     gatsbyPluginFeed(),
   ],
+  flags: {
+    // Don't clear webpack's cache unless .cache is deleted manually.
+    PRESERVE_WEBPACK_CACHE: true,
+  },
 };
 
 function gatsbyPluginFeed() {
