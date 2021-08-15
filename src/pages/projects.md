@@ -14,6 +14,16 @@ layout: "projects"
 
 <hr />
 
+## Ray Tracer
+
+<a href="https://github.com/Garee/ray-tracer" class="image">
+    <img src="../images/projects/ray-tracer.png" alt="Ray Tracer" title="Ray Tracer" />
+</a>
+
+[Ray Tracer](https://github.com/Garee/ray-tracer) is an implementation of a ray tracing renderer using JavaScript and Canvas.
+
+<hr />
+
 ## sp
 
 <a href="https://github.com/Garee/sp" class="image">
