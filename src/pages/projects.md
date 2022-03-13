@@ -4,6 +4,14 @@ title: "Projects"
 layout: "projects"
 ---
 
+## Glasgow's Litter
+
+<a href="https://glasgow-litter.garyblackwood.co.uk" class="image">
+    <img src="../images/projects/glasgow-litter.png" alt="Glasgow's Litter" title="Glasgow's Litter" />
+</a>
+
+An [interactive visualisation](https://glasgow-litter.garyblackwood.co.uk) of litter on the streets of Glasgow City. It is part of a research project which aims to discover relationships between deprivation and litter.
+
 ## PyTodoist
 
 <a href="https://github.com/Garee/pytodoist" class="image">

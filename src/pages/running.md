@@ -10,13 +10,13 @@ path: "/running"
 
 Each year I strive to run one mile for each year in the Gregorian calendar era.
 
-_Last updated: 30/01/22_
+_Last updated: 13/03/22_
 
 ## 2022
 
 | Miles | Kilometers | Goal |
 | ----- | ---------- | ---- |
-| 108   | 174        | 2022 |
+| 324   | 523        | 2022 |
 
 ### Races
 
@@ -26,7 +26,7 @@ None 😢
 
 | Miles | Kilometers | Goal |
 | ----- | ---------- | ---- |
-| 974   | 1569        | 2021 |
+| 974   | 1569       | 2021 |
 
 ### Races
 
