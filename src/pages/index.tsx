@@ -10,7 +10,7 @@ const IndexPage = () => (
       helps others gain insights from their data.
     </p>
     <p>
-      I'm also a postgraduate student at{" "}
+      I was also recently a postgraduate student at{" "}
       <a href="https://www.gla.ac.uk">The University of Glasgow</a>, studying
       part-time to attain a MSc Data Analytics.
     </p>
