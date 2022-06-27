@@ -5,9 +5,9 @@ import AboutLayout from "../components/layouts/about/about";
 const IndexPage = () => (
   <AboutLayout>
     <p>
-      I'm a senior software developer at{" "}
-      <a href="https://www.sas.com">SAS Institute</a>, creating software that
-      helps others gain insights from their data.
+      I'm a senior software engineer at{" "}
+      <a href="https://www.globality.com">Globality</a>, creating software that
+      helps businesses efficiently procure services.
     </p>
     <p>
       I was also recently a postgraduate student at{" "}
@@ -15,7 +15,8 @@ const IndexPage = () => (
       part-time to attain a MSc Data Analytics.
     </p>
     <p>
-      Previously, I worked at <a href="https://www.doist.com">Doist</a> and{" "}
+      Previously, I worked at <a href="https://www.sas.com">SAS Institute</a>,{" "}
+      <a href="https://www.doist.com">Doist</a> and{" "}
       <a href="https://www.jpmorganchase.com">J.P. Morgan Chase</a>. Before
       that, I graduated from The University of Glasgow with a BSc Software
       Engineering.
