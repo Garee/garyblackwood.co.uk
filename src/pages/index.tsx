@@ -23,7 +23,7 @@ const IndexPage = () => (
     </p>
     <p>I was born and grew up in Glasgow, and so far its been pretty good.</p>
     <p>
-      I enjoy <a href="/running">distance running</a>,{" "}
+      I enjoy distance running,{" "}
       <a href="/projects">programming</a>, metal 🤘, chess, and video games.
     </p>
     <p>
