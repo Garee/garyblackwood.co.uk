@@ -1,13 +1,11 @@
-import React from "react";
-
 import AboutLayout from "../components/layouts/about/about";
 
 const IndexPage = () => (
   <AboutLayout>
     <p>
       I'm a senior software engineer at{" "}
-      <a href="https://www.globality.com">Globality</a>, creating software that
-      helps businesses efficiently procure services.
+      <a href="https://www.globality.com">Globality</a> where we're creating an
+      autonomous sourcing platform.
     </p>
     <p>
       I was also recently a postgraduate student at{" "}
