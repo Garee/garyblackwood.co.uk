@@ -1,3 +1,5 @@
+import React from "react";
+
 import AboutLayout from "../components/layouts/about/about";
 
 const IndexPage = () => (
@@ -21,8 +23,8 @@ const IndexPage = () => (
     </p>
     <p>I was born and grew up in Glasgow, and so far its been pretty good.</p>
     <p>
-      I enjoy distance running,{" "}
-      <a href="/projects">programming</a>, metal 🤘, chess, and video games.
+      I enjoy distance running, <a href="/projects">programming</a>, metal 🤘,
+      chess, and video games.
     </p>
     <p>
       You can find me on <a href="https://github.com/Garee">Github</a> and{" "}
