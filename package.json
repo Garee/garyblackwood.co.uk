@@ -32,7 +32,7 @@
     "lint": "npm run lint:ts && npm run lint:js && npm run lint:css"
   },
   "dependencies": {
-    "gatsby": "4.25.8",
+    "gatsby": "5.13.4",
     "gatsby-plugin-catch-links": "4.23.0",
     "gatsby-plugin-feed": "4.23.1",
     "gatsby-plugin-image": "2.23.1",
