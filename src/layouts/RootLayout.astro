@@ -1,0 +1,64 @@
+---
+import '@fontsource-variable/noto-sans';
+import '@fontsource/permanent-marker';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content={description ?? 'The personal website of Gary Blackwood.'}
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#111827" />
+
+    <title>{`${title} | Gary Blackwood`}</title>
+
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={title}
+      href={new URL('rss.xml', Astro.site)}
+    />
+  </head>
+  <body class="bg-white text-gray-900 font-inter">
+    <main class="m-8 md:m-auto mt-8 md:mt-8 max-w-[960px]">
+      <Header />
+      <slot />
+      <Footer />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Permanent Marker';
+    }
+  }
+</style>

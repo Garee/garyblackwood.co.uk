@@ -1,0 +1,11 @@
+---
+const isHomeRoute = Astro.url.pathname === '/';
+---
+
+<a href={isHomeRoute ? '' : '/'}>
+  <h1
+    class="text-3xl md:text-6xl font-bold text-center mb-8 md:mb-16 uppercase transition-transform duration-200 hover:scale-110"
+  >
+    Gary Blackwood
+  </h1>
+</a>

@@ -1,6 +1,6 @@
 {
   "name": "garyblackwood.co.uk",
-  "version": "0.2.0",
+  "version": "0.0.1",
   "private": true,
   "description": "The personal website of Gary Blackwood.",
   "author": "Gary Blackwood <gary@garyblackwood.co.uk>",
@@ -10,89 +10,31 @@
     "url": "https://github.com/Garee/garyblackwood.co.uk"
   },
   "bugs": "https://github.com/Garee/garyblackwood.co.uk/issues",
-  "keywords": [
-    "gary",
-    "blackwood",
-    "personal",
-    "website"
-  ],
+  "type": "module",
   "scripts": {
-    "dev": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "format": "prettier --write *.{js,json} src/**/*.{json,ts,tsx,js,css}",
-    "prepare": "husky install",
-    "pre-commit": "npm run type-check && lint-staged",
-    "type-check": "tsc --noEmit",
-    "lint:js": "eslint --fix *.js src/**/*.js",
-    "lint:ts": "eslint --fix src/**/*.tsx",
-    "lint:css": "stylelint --fix src/**/*.css",
-    "lint": "npm run lint:ts && npm run lint:js && npm run lint:css"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write .",
+    "check": "astro check"
   },
   "dependencies": {
-    "gatsby": "5.13.4",
-    "gatsby-plugin-catch-links": "4.23.0",
-    "gatsby-plugin-feed": "4.23.1",
-    "gatsby-plugin-image": "2.23.1",
-    "gatsby-plugin-manifest": "4.23.1",
-    "gatsby-plugin-nprogress": "4.23.0",
-    "gatsby-plugin-offline": "5.23.1",
-    "gatsby-plugin-postcss": "5.23.0",
-    "gatsby-plugin-react-helmet": "5.23.0",
-    "gatsby-plugin-react-svg": "3.1.0",
-    "gatsby-plugin-sharp": "4.23.1",
-    "gatsby-plugin-sitemap": "5.23.1",
-    "gatsby-plugin-typescript": "4.23.0",
-    "gatsby-plugin-typography": "4.23.0",
-    "gatsby-remark-autolink-headers": "5.23.1",
-    "gatsby-remark-copy-linked-files": "5.23.0",
-    "gatsby-remark-images": "6.23.1",
-    "gatsby-remark-prismjs": "6.23.0",
-    "gatsby-source-filesystem": "4.23.0",
-    "gatsby-transformer-remark": "5.25.1",
-    "gatsby-transformer-sharp": "4.23.1",
-    "glightbox": "3.2.0",
-    "postcss": "8.4.31",
-    "postcss-import": "15.0.0",
-    "postcss-preset-env": "7.8.2",
-    "precss": "4.0.0",
-    "prismjs": "1.29.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-helmet": "6.1.0",
-    "react-photo-gallery": "8.0.0",
-    "react-typography": "0.16.20",
-    "typescript": "4.8.3",
-    "typography": "0.16.21",
-    "typography-theme-irving": "0.16.19"
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/rss": "^4.0.9",
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/tailwind": "^5.1.2",
+    "@fontsource-variable/noto-sans": "^5.1.0",
+    "@fontsource/permanent-marker": "^5.1.0",
+    "@igor.dvlpr/astro-post-excerpt": "^3.0.4",
+    "@tailwindcss/typography": "^0.5.15",
+    "astro": "^5.0.0-beta.5",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "7.19.1",
-    "@types/node": "18.7.21",
-    "@types/react": "18.0.21",
-    "@types/react-dom": "18.0.6",
-    "@types/react-helmet": "6.1.5",
-    "@types/typography": "0.16.4",
-    "babel-eslint": "10.1.0",
-    "eslint": "8.24.0",
-    "eslint-config-react-app": "7.0.1",
-    "husky": "8.0.1",
-    "lint-staged": "13.0.3",
-    "prettier": "2.7.1",
-    "stylelint": "14.12.1",
-    "stylelint-config-prettier": "9.0.3",
-    "stylelint-config-standard": "28.0.0"
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix"
-    ],
-    "*.css": [
-      "prettier --write",
-      "stylelint --fix"
-    ]
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }

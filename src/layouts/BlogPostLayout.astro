@@ -1,0 +1,34 @@
+---
+import formatDate from '../utils/formatDate';
+import RootLayout from './RootLayout.astro';
+
+type Props = {
+  title: string;
+  description?: string;
+  date: Date;
+  link?: string;
+};
+
+const { title, description, date, link } = Astro.props;
+---
+
+<RootLayout title={title} description={description} `>
+  <article
+    class="prose prose-sm md:prose-base prose-slate max-w-full prose-headings:mb-2"
+  >
+    <h1>{title}</h1>
+
+    <div class="font-light text-sm">
+      {formatDate(date)}
+    </div>
+
+    {
+      link && (
+        <a href={link} class="mb-4 font-light text-sm">
+          {link}
+        </a>
+      )
+    }
+    <slot />
+  </article>
+</RootLayout>

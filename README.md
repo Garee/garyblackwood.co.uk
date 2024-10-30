@@ -1,16 +1,12 @@
-# garyblackwood.co.uk
+# Gary Blackwood
 
-The personal website of Gary Blackwood.
+This is my personal website that has been created using [Astro](https://astro.build/).
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e5e06475-7b0a-4587-8f2f-69aff3815882/deploy-status)](https://app.netlify.com/sites/garyblackwood/deploys)
-
-[![Build Status](https://travis-ci.com/Garee/garyblackwood.co.uk.svg?branch=master)](https://travis-ci.com/Garee/garyblackwood.co.uk)
-
-## Getting Started
+## Quick Start
 
 Install the dependencies:
 
-`npm install`
+`npm install --legacy-peer-deps`
 
 Start the development server:
 
@@ -19,3 +15,7 @@ Start the development server:
 Build for production:
 
 `npm run build`
+
+Preview the production build:
+
+`npm run preview`

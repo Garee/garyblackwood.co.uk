@@ -1,0 +1,33 @@
+---
+import PostExcerpt from '@igor.dvlpr/astro-post-excerpt';
+import { getCollection } from 'astro:content';
+import RootLayout from '../../layouts/RootLayout.astro';
+import formatDate from '../../utils/formatDate';
+
+const blogPosts = await getCollection('blog');
+---
+
+<RootLayout title="Blog" description="The personal blog of Gary Blackwood.">
+  <ul
+    class="prose prose-sm md:prose-base prose-slate max-w-full prose-headings:mb-2 prose-li:mb-8"
+  >
+    {
+      blogPosts
+        .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+        .map((post) => (
+          <li>
+            <a href={`/blog/${post.slug}`}>
+              <h1>
+                {post.data.project ? 'Project: ' : ''}
+                {post.data.title}
+              </h1>
+            </a>
+            <div class="mb-4 font-light text-sm">
+              {formatDate(post.data.date)}
+            </div>
+            <PostExcerpt post={post} words={20} addEllipsis={true} />
+          </li>
+        ))
+    }
+  </ul>
+</RootLayout>
