@@ -17,10 +17,10 @@ const blogPosts = await getCollection('blog');
         .map((post) => (
           <li>
             <a href={`/blog/${post.slug}`}>
-              <h1>
+              <h2>
                 {post.data.project ? 'Project: ' : ''}
                 {post.data.title}
-              </h1>
+              </h2>
             </a>
             <div class="mb-4 font-light text-sm">
               {formatDate(post.data.date)}
