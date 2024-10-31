@@ -1,18 +1,41 @@
 ---
-const isHomeRoute = Astro.url.pathname === "/";
+import { Icon } from 'astro-icon/components';
+
+const isHomeRoute = Astro.url.pathname === '/';
+const isBlogRoute = Astro.url.pathname.startsWith('/blog');
 const year = new Date().getFullYear();
 ---
 
 <hr class="mt-8 mb-4" />
 
-<div
+<di
   class="text-center font-light text-sm mb-8 flex justify-center items-center"
 >
   <span>&copy {year}, Gary Blackwood</span>
+
   <span class="mx-1">|</span>
-  {!isHomeRoute && (
-    <a href="/" class="underline">Home</a>
-    <span class="mx-1">|</span>
-  )}
+
+  {
+    !isHomeRoute && (
+      <>
+        <a href="/" class="underline">
+          Home
+        </a>
+        <span class="mx-1">|</span>
+      </>
+    )
+  }
+
   <a href="/blog" class="underline">Blog</a>
-</div>
+
+  {
+    isBlogRoute && (
+      <>
+        <span class="mx-1">|</span>
+        <a href="/rss.xml" class="mb-0.5">
+          <Icon name="tabler:rss" class="inline" />
+        </a>
+      </>
+    )
+  }
+</di>

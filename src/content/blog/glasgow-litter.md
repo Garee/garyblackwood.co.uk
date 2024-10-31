@@ -1,7 +1,7 @@
 ---
 slug: 'glasgows-litter'
 title: 'Glasgow’s Litter'
-description: "An interactive visualisation of litter on the streets of Glasgow City."
+description: 'An interactive visualisation of litter on the streets of Glasgow City.'
 date: '2022-07-12'
 tags: ['project', 'glasgow', 'data science']
 project: true

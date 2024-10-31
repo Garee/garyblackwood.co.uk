@@ -1,7 +1,7 @@
 ---
 slug: 'sp'
 title: 'sp'
-description: "A command line utility for searching startpage.com"
+description: 'A command line utility for searching startpage.com'
 date: '2016-09-20'
 tags: ['project', 'python', 'cli']
 project: true
