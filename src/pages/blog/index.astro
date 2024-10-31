@@ -17,15 +17,25 @@ const blogPosts = await getCollection('blog');
         .map((post) => (
           <li>
             <a href={`/blog/${post.slug}`}>
-              <h2>
-                {post.data.project ? 'Project: ' : ''}
-                {post.data.title}
-              </h2>
+              <h2>{post.data.title}</h2>
             </a>
-            <div class="mb-4 font-light text-sm">
-              {formatDate(post.data.date)}
+            <div class="mb-4">
+              <span class="font-light text-sm">
+                {formatDate(post.data.date)}
+              </span>
+              <span class="mx-1">&#x2022;</span>
+              {post.data.tags && (
+                <ul class="not-prose p-0 m-0 inline">
+                  {post.data.tags.map((tag) => (
+                    <li class="list-none inline me-2 text-sm font-light">
+                      #{tag}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
-            <PostExcerpt post={post} words={20} addEllipsis={true} />
+
+            <PostExcerpt post={post} words={30} addEllipsis={true} />
           </li>
         ))
     }

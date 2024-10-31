@@ -3,7 +3,7 @@ slug: 'dark-mode-preference-detection'
 title: 'Dark Mode Preference Detection'
 description: "An article that describes how to detect a user's dark mode preference."
 date: '2023-11-13'
-tags: ['dark mode', 'javascript', 'css', 'webdev', 'prefers-color-scheme']
+tags: ['javascript', 'css', 'webdev']
 ---
 
 If you're anything like me, you always enable the dark mode within your operating system and applications. Did you know that there is a [media query](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_queries) that allows you to query whether a user prefers dark mode?
