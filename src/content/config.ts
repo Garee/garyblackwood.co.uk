@@ -13,7 +13,8 @@ const blogCollection = defineCollection({
     tags: z.array(z.string()),
     draft: z.boolean().default(false),
     project: z.boolean().default(false),
-    link: z.string().optional(),
+    linkUrl: z.string().optional(),
+    githubUrl: z.string().optional(),
   }),
 });
 

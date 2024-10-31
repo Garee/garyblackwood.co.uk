@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon/components';
 import formatDate from '../utils/formatDate';
 import RootLayout from './RootLayout.astro';
 
@@ -6,10 +7,11 @@ type Props = {
   title: string;
   description?: string;
   date: Date;
-  link?: string;
+  linkUrl?: string;
+  githubUrl?: string;
 };
 
-const { title, description, date, link } = Astro.props;
+const { title, description, date, linkUrl, githubUrl } = Astro.props;
 ---
 
 <RootLayout title={title} description={description} `>
@@ -22,13 +24,29 @@ const { title, description, date, link } = Astro.props;
       {formatDate(date)}
     </div>
 
-    {
-      link && (
-        <a href={link} class="mb-4 font-light text-sm">
-          {link}
-        </a>
-      )
-    }
+    <ul class="not-prose p-0 m-0">
+      {
+        linkUrl && (
+          <li class="md:me-2 md:inline list-none p-0 text-nowrap overflow-hidden text-ellipsis">
+            <Icon name="tabler:link" class="inline-block" />
+            <a href={linkUrl} target="_blank" class="mb-4 font-light text-sm">
+              {linkUrl}
+            </a>
+          </li>
+        )
+      }
+      {
+        githubUrl && (
+          <li class="md:inline list-none p-0 text-nowrap overflow-hidden text-ellipsis">
+            <Icon name="tabler:brand-github" class="inline-block" />
+            <a href={githubUrl} target="_blank" class="mb-4 font-light text-sm">
+              {githubUrl}
+            </a>
+          </li>
+        )
+      }
+    </ul>
+
     <slot />
   </article>
 </RootLayout>
