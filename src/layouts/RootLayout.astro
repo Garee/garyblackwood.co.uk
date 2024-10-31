@@ -10,6 +10,8 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+
+const isProd = import.meta.env.PROD;
 ---
 
 <!doctype html>
@@ -43,6 +45,16 @@ const { title, description } = Astro.props;
       <slot />
       <Footer />
     </main>
+
+    {
+      isProd && (
+        <script
+          defer
+          src="https://umami.mars.garyblackwood.co.uk/script.js"
+          data-website-id="b4f44608-6159-41ed-9788-96e988698662"
+        />
+      )
+    }
   </body>
 </html>
 

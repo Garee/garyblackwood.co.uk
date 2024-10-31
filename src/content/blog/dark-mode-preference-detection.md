@@ -6,7 +6,7 @@ date: '2023-11-13'
 tags: ['dark mode', 'javascript', 'css', 'webdev', 'prefers-color-scheme']
 ---
 
-If you're anything like me, you always enable the dark mode within your operating system and applications. Did you know that there is a [media query](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_queries) that allows you query whether a user prefers dark mode?
+If you're anything like me, you always enable the dark mode within your operating system and applications. Did you know that there is a [media query](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_queries) that allows you to query whether a user prefers dark mode?
 
 The [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS media feature can be used to detect whether a user has requested a light or dark theme. In combination with CSS variables, this allows us to support dynamically switching between multiple themes.
 

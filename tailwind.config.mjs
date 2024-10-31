@@ -10,6 +10,5 @@ export default {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
-  darkMode: 'selector',
+  plugins: [require('@tailwindcss/typography')]
 };
