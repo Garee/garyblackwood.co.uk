@@ -22,10 +22,7 @@ const siteDescription = `${description} | Software Engineer based in Glasgow, Sc
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content={description ?? 'The personal website of Gary Blackwood.'}
-    />
+    <meta name="description" content={siteDescription} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content="#111827" />
@@ -43,7 +40,7 @@ const siteDescription = `${description} | Software Engineer based in Glasgow, Sc
     <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content={siteTitle} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={siteDescription} />
     <meta property="og:url" content="https://garyblackwood.co.uk" />
     <meta property="og:image" content={AvatarImage.src} />
 
