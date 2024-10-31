@@ -15,7 +15,7 @@ const { title, description } = Astro.props;
 const isProd = import.meta.env.PROD;
 
 const siteTitle = `${title} | Gary Blackwood`;
-const siteDescription = `${description} | Software Engineer based in Glasgow, Scotland.`;
+const siteDescription = `${description ?? 'Personal Website'} | Software Engineer based in Glasgow, Scotland.`;
 ---
 
 <!doctype html>
