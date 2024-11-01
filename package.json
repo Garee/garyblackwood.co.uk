@@ -18,8 +18,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-    "check": "astro check",
-    "prepare": "husky"
+    "check": "astro check"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
