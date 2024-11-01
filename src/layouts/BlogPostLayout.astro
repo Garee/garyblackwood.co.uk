@@ -1,6 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components';
-import formatDate from '../utils/formatDate';
+import BlogPostSubHeading from '../components/BlogPostSubHeading.astro';
 import RootLayout from './RootLayout.astro';
 
 type Props = {
@@ -15,27 +15,13 @@ type Props = {
 const { title, description, date, linkUrl, githubUrl, tags } = Astro.props;
 ---
 
-<RootLayout title={title} description={description} `>
+<RootLayout title={title} description={description}>
   <article
-    class="prose prose-sm md:prose-base prose-slate max-w-full prose-headings:mb-2"
+    class="blog-article prose prose-sm md:prose-base prose-slate max-w-full prose-headings:mb-2"
   >
     <h2>{title}</h2>
 
-    <div>
-      <span class="font-light text-sm">
-        {formatDate(date)}
-      </span>
-      <span class="mx-1">&#x2022;</span>
-      {
-        tags && (
-          <ul class="not-prose p-0 m-0 inline">
-            {tags.map((tag) => (
-              <li class="list-none inline me-2 text-sm font-light">#{tag}</li>
-            ))}
-          </ul>
-        )
-      }
-    </div>
+    <BlogPostSubHeading date={date} tags={tags} />
 
     <ul class="not-prose p-0 m-0">
       {
@@ -63,3 +49,11 @@ const { title, description, date, linkUrl, githubUrl, tags } = Astro.props;
     <slot />
   </article>
 </RootLayout>
+
+<style is:global>
+  .blog-article img {
+    border: 1px solid var(--theme-color);
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+</style>

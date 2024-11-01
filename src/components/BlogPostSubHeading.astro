@@ -1,0 +1,27 @@
+---
+import formatDate from '../utils/formatDate';
+
+type Props = {
+  date: Date;
+  tags: string[];
+  class?: string;
+};
+
+const { date, tags, class: className } = Astro.props;
+---
+
+<div class={className}>
+  <span class="font-light text-sm">
+    {formatDate(date)}
+  </span>
+  <span class="mx-1">&#x2022;</span>
+  {
+    tags && (
+      <ul class="not-prose p-0 m-0 inline">
+        {tags.map((tag) => (
+          <li class="list-none inline me-2 text-sm font-light">#{tag}</li>
+        ))}
+      </ul>
+    )
+  }
+</div>

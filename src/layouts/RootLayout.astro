@@ -14,8 +14,9 @@ const { title, description } = Astro.props;
 
 const isProd = import.meta.env.PROD;
 
-const siteTitle = `${title} | Gary Blackwood`;
-const siteDescription = `${description ?? 'Personal Website'} | Software Engineer based in Glasgow, Scotland.`;
+const author = 'Gary Blackwood';
+const siteTitle = `${title} | ${author}`;
+const siteDescription = `${description ?? author} | Software Engineer based in Glasgow, Scotland.`;
 ---
 
 <!doctype html>
@@ -30,21 +31,19 @@ const siteDescription = `${description ?? 'Personal Website'} | Software Enginee
     <title>{siteTitle}</title>
 
     <!-- Search Engine Meta Tags -->
-    <meta name="author" content="Gary Blackwood" />
+    <meta name="author" content={author} />
     <meta
       name="keywords"
-      content="software engineer, full stack developer, Glasgow, Scotland, data analytics"
+      content="software engineer, Glasgow, Scotland, data analytics"
     />
     <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content={siteTitle} />
     <meta property="og:description" content={siteDescription} />
     <meta property="og:url" content="https://garyblackwood.co.uk" />
     <meta property="og:image" content={AvatarImage.src} />
 
-    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@GarySoftware" />
     <meta name="twitter:title" content={siteTitle} />
@@ -52,7 +51,7 @@ const siteDescription = `${description ?? 'Personal Website'} | Software Enginee
     <meta name="twitter:image" content={AvatarImage.src} />
 
     <link rel="icon" type="image/png" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link
@@ -97,10 +96,8 @@ const siteDescription = `${description ?? 'Personal Website'} | Software Enginee
       font-family: 'Permanent Marker';
     }
 
-    article img {
-      border: 1px solid #111827;
-      border-radius: 5px;
-      margin: 0 auto;
+    :root {
+      --theme-color: #111827;
     }
   }
 </style>
