@@ -27,7 +27,7 @@
     "@astrojs/tailwind": "^5.1.2",
     "@fontsource-variable/noto-sans": "^5.1.0",
     "@fontsource/permanent-marker": "^5.1.0",
-    "@iconify-json/tabler": "^1.2.7",
+    "@iconify-json/tabler": "^1.2.8",
     "@igor.dvlpr/astro-post-excerpt": "^3.0.4",
     "@tailwindcss/typography": "^0.5.15",
     "astro": "^5.0.0-beta.7",
