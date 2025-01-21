@@ -11,6 +11,6 @@ I hold an MSc in Data Analytics and a BSc in Software Engineering from [The Univ
 
 I enjoy distance running 🏃‍♂️‍➡️, programming 💻, metal music 🤘, and video games 🎮.
 
-You can find me on [Github](https://github.com/Garee), [LinkedIn](https://linkedin.com/in/garyblackwood), and [X](https://x.com/GarySoftware).
+You can find me on [Github](https://github.com/Garee), [LinkedIn](https://linkedin.com/in/garyblackwood), and [Bluesky](https://bsky.app/profile/garyblackwood.bsky.social).
 
 Feel free to [email me](mailto:gary@garyblackwood.co.uk) or send me a [direct message](https://x.com/GarySoftware) if you'd like to chat.
