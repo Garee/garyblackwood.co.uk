@@ -13,4 +13,4 @@ I enjoy distance running 🏃‍♂️‍➡️, programming 💻, metal music �
 
 You can find me on [Github](https://github.com/Garee), [LinkedIn](https://linkedin.com/in/garyblackwood), and [Bluesky](https://bsky.app/profile/garyblackwood.bsky.social).
 
-Feel free to [email me](mailto:gary@garyblackwood.co.uk) or send me a [direct message](https://x.com/GarySoftware) if you'd like to chat.
+Feel free to [email me](mailto:gary@garyblackwood.co.uk) or send me a [direct message](https://bsky.app/profile/garyblackwood.bsky.social) if you'd like to chat.
