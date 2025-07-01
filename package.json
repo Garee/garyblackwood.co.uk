@@ -29,7 +29,7 @@
     "@iconify-json/tabler": "^1.2.19",
     "@igor.dvlpr/astro-post-excerpt": "^3.0.4",
     "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.1.10",
+    "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.10.1",
     "astro-icon": "^1.1.5",
     "tailwindcss": "^4.1.11",
