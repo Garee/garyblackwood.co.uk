@@ -30,7 +30,7 @@
     "@igor.dvlpr/astro-post-excerpt": "^3.0.4",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.11",
-    "astro": "^5.11.0",
+    "astro": "^5.12.9",
     "astro-icon": "^1.1.5",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.9.2"
