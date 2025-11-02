@@ -26,7 +26,7 @@
     "@astrojs/sitemap": "^3.5.1",
     "@fontsource-variable/noto-sans": "^5.2.8",
     "@fontsource/permanent-marker": "^5.2.7",
-    "@iconify-json/tabler": "^1.2.22",
+    "@iconify-json/tabler": "^1.2.23",
     "@igor.dvlpr/astro-post-excerpt": "^4.0.0",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.1.14",
