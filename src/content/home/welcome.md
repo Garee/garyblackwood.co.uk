@@ -5,7 +5,7 @@
 
 I'm a software engineer based in Glasgow, Scotland. Please explore my [blog](/blog) ✍️ and check out my projects 🛠️.
 
-I currently work at [Bioliberty](https://bioliberty.co.uk) where we are building rehabilitative robotics to help people recover from medical conditions and live more independent lives.
+I recently worked at [Bioliberty](https://bioliberty.co.uk) where we built rehabilitative robotics and software to help people recover from medical conditions and live more independent lives.
 
 Previously, I contributed at organisations such as [Globality](https://globality.com), [SAS Institute](https://sas.com), [Doist](https://doist.com) and [J.P. Morgan Chase](https://jpmorgan.com).
 
